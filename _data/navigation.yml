@@ -26,7 +26,7 @@ header:
 
   - titles:
       # @start locale config
-      en      : &EN       Docs
+      en      : &EN       Test
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
@@ -47,7 +47,7 @@ header:
       fr-FR   : *FR
       fr-LU   : *FR
       # @end locale config
-    url: /docs/ko/2020-11-04-Start blog
+    url: /test
 
   - titles:
       # @start locale config
