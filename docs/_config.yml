@@ -201,7 +201,25 @@ exclude:
   - /test
   - /vendor
 
+collections_dir: docs
+collections:
+  docs:
+    output: true
+  sample_page:
+    output: true
+  sample_articles:
+    output: true
+  sample_languages:
+    output: true
+
 defaults:
+  ## home
+  - scope:
+      path: "docs"
+    values:
+      articles:
+        excerpt_type: html
+  ## posts
   - scope:
       path: ""
       type: posts
@@ -209,11 +227,29 @@ defaults:
       layout: article
       sharing: true
       license: true
+      category: post
       aside:
         toc: true
       show_edit_on_github: true
       show_subscribe: true
       pageview: true
+      # lightbox: true
+
+  ## docs
+  - scope:
+      path: "_docs/ko"
+    values:
+      layout: article
+      nav_key: docs
+      sidebar:
+        nav: docs-ko
+      license: true
+      aside:
+        toc: true
+      show_edit_on_github: true
+      show_date: false
+      # lightbox: true
+
 
 
 ## => Plugins
@@ -224,5 +260,4 @@ plugins:
   - jekyll-sitemap
   - jemoji
 
-remote_theme : kitian616/jekyll-TeXt-theme
-
+data_dir: /docs/_data
