@@ -16,39 +16,10 @@ docs-ko:
   - title:      Start
     children:
       - title:  Quick Start
-        url:    /docs/en/quick-start
-      - title:  Structure
-        url:    /docs/en/structure
-      - title:  Update from 1.x to 2.x
-        url:    /docs/en/update-from-1-to-2
-  - title:      Customization
-    children:
-      - title:  Configuration
-        url:    /docs/en/configuration
-      - title:  Navigation
-        url:    /docs/en/navigation
-      - title:  Layouts
-        url:    /docs/en/layouts
-      - title:  Logo and Favicon
-        url:    /docs/en/logo-and-favicon
-      - title:  Authors
-        url:    /docs/en/authors
-      - title:  Internationalization
-        url:    /docs/en/i18n
+        url:    /docs/ko/blog start
 
 layouts:
   - title: Layouts
     children:
-      - title:  Single
-        url:    /page/single.html
-      - title:  Aside
-        url:    /page/aside.html
-      - title:  Sidebar
-        url:    /page/sidebar.html
-
-      - title:  Sidebar (Aside)
-        url:    /page/sidebar-aside.html
-      - title:  Article Header Overlay Background Fill
-        url:    /page/article-header-overlay-background-fill.html
-      - title:  Article Header Overlay Background Image
-        url:    /page/article-header-overlay-background-image.html
+      - title:  layout
+        url:    /docs/docs.html
