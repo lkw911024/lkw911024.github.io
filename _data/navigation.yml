@@ -101,7 +101,7 @@ header:
 
 - titles:
       # @start locale config
-      en      : &EN       Test
+      en      : &EN       TTTT
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
@@ -122,4 +122,4 @@ header:
       fr-FR   : *FR
       fr-LU   : *FR
       # @end locale config
-    url: /docs/docs.html
+    url: /docs/docs.md
