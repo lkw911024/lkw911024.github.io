@@ -97,7 +97,7 @@ chart: true # false (default), true
 ## => Paginate
 ##############################
 paginate: 8
-paginate_path: /page:num # don't change this unless for special need
+paginate_path: /docs/page:num # don't change this unless for special need
 ## 사이트에서 페이지 당 표시 할 최대 게시물의 수
 
 ## => Sources
