@@ -2,7 +2,7 @@ header:
   - title:      Home
     url:        /index/
   - title:      Docs
-    url:        /docs/ko/
+    url:        /docs/docs.html
     key:        docs
   - title:      Archive
     url:        /archive.html
