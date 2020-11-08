@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="ko" /><updated>2020-11-09T04:58:28+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">lkw911024’s blog</title><subtitle>Weakness Programmer lkw911024's blog
+</subtitle><author><name>Kyeongwon Lee</name><email>aelleek@gmail.com</email></author><entry><title type="html">Database 개요</title><link href="http://localhost:4000/study/Database/Ch01" rel="alternate" type="text/html" title="Database 개요" /><published>2020-11-06T00:00:00+09:00</published><updated>2020-11-06T00:00:00+09:00</updated><id>http://localhost:4000/study/Database/Ch01</id><content type="html" xml:base="http://localhost:4000/study/Database/Ch01">&lt;h1 id=&quot;ch01-database-개요&quot;&gt;&lt;strong&gt;Ch01. Database 개요&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;h2 id=&quot;1-데이터베이스란&quot;&gt;&lt;strong&gt;1. 데이터베이스란?&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;데이터베이스는 한 조직의 여러 응용 시스템들이 공용할 수 있도록 통합, 저장된 운영 데이터의 집합이다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;여러 사람이 공유하여 사용할 목적으로 체계화해 통합, 관리하는 데이터의 집합이다. 
+작성된 목록으로써 여러 응용 시스템들의 통합된 정보들을 저장하여 운영할 수 있는 공용 데이터들의 묶음이다. (구글 검색 결과)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;기존에-사용하던-파일시스템의-문제점&quot;&gt;기존에 사용하던 파일시스템의 문제점.&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;데이터종속 : 응용프로그램과 데이터간의 상호의존 관계..
+데이터를 저장한 FILE이 변경 되면 응용시스템의 내부도 변경이 되어야한다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;데이터중복 : 관련된 데이터의 불일치가 발생.
+동일한 데이터에 여러개의 시스템에서 접근하여 데이터를 수정하려고 할 때, 문제가 있다.
+(일관성, 보안성, 경제성, 무결성)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2-dbmsdatabase-management-system-데이터베이스-관리-시스템&quot;&gt;&lt;strong&gt;2. DBMS(Database Management System) 데이터베이스 관리 시스템&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;방대한 양의 데이터를 효율적으로 관리하기 위해 만들어진 시스템.&lt;/li&gt;
+  &lt;li&gt;응용프로그램과 데이터베이스 사이의 중재자.&lt;/li&gt;
+  &lt;li&gt;모든 응용 프로그램들이 데이터베이스를 공용할 수 있게끔 관리해 주는 소프트웨어 시스템.
+ex) 실시간 접근이 가능해야 하고 지속적으로 최신의 정보를 제공해야 하는 데이터 베이스의 데이터 유지 관리를 효율적으로 제공한다.&lt;/li&gt;
+  &lt;li&gt;여러 응용 프로그램에서 데이터베이스에 직접 접근 하는 것이 아니라 DBMS를 통해 데이터의 추가, 변경, 삭제, 검색의 기능을 수행하는 것.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;3-rdbmsrealational-database-management-system-관계형-데이터베이스&quot;&gt;&lt;strong&gt;3. RDBMS(Realational-Database Management System) 관계형 데이터베이스&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;관계형 데이터 베이는 정보 저장을 위해 2차원 테이블과 관계를 이용한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;성명&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;주소&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;전화번호&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;이경원&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;서울&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;02-000-000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;이천우&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;인천&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;032-111-111&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;박세훈&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;광주&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;031-222-222&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;(2차원 테이블)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;관계형 데이터베이스의 데이터를 조회하거나 수정, 삭제하기 위해서 SQL(Structured Query Language)을 사용한다.&lt;/li&gt;
+  &lt;li&gt;일련의 정형화된 데이터 항목들의 집합체로 데이터베이스를 만들거나 이용하기가 비교적 쉽다.&lt;/li&gt;
+  &lt;li&gt;무엇보다 확장이 용이하다는 장점이 있다.&lt;/li&gt;
+  &lt;li&gt;처음 데이터베이스를 만든 후 관련되는 응용 프로그램들을 변경하지 않고도 새로운 데이터를 추가 할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Kyeongwon Lee</name><email>aelleek@gmail.com</email></author><summary type="html">Ch01. Database 개요 1. 데이터베이스란? 데이터베이스는 한 조직의 여러 응용 시스템들이 공용할 수 있도록 통합, 저장된 운영 데이터의 집합이다. 여러 사람이 공유하여 사용할 목적으로 체계화해 통합, 관리하는 데이터의 집합이다. 작성된 목록으로써 여러 응용 시스템들의 통합된 정보들을 저장하여 운영할 수 있는 공용 데이터들의 묶음이다. (구글 검색 결과) 기존에 사용하던 파일시스템의 문제점. 데이터종속 : 응용프로그램과 데이터간의 상호의존 관계.. 데이터를 저장한 FILE이 변경 되면 응용시스템의 내부도 변경이 되어야한다. 데이터중복 : 관련된 데이터의 불일치가 발생. 동일한 데이터에 여러개의 시스템에서 접근하여 데이터를 수정하려고 할 때, 문제가 있다. (일관성, 보안성, 경제성, 무결성) 2. DBMS(Database Management System) 데이터베이스 관리 시스템 방대한 양의 데이터를 효율적으로 관리하기 위해 만들어진 시스템. 응용프로그램과 데이터베이스 사이의 중재자. 모든 응용 프로그램들이 데이터베이스를 공용할 수 있게끔 관리해 주는 소프트웨어 시스템. ex) 실시간 접근이 가능해야 하고 지속적으로 최신의 정보를 제공해야 하는 데이터 베이스의 데이터 유지 관리를 효율적으로 제공한다. 여러 응용 프로그램에서 데이터베이스에 직접 접근 하는 것이 아니라 DBMS를 통해 데이터의 추가, 변경, 삭제, 검색의 기능을 수행하는 것. 3. RDBMS(Realational-Database Management System) 관계형 데이터베이스 관계형 데이터 베이는 정보 저장을 위해 2차원 테이블과 관계를 이용한다. 성명 주소 전화번호 이경원 서울 02-000-000 이천우 인천 032-111-111 박세훈 광주 031-222-222 (2차원 테이블) 관계형 데이터베이스의 데이터를 조회하거나 수정, 삭제하기 위해서 SQL(Structured Query Language)을 사용한다. 일련의 정형화된 데이터 항목들의 집합체로 데이터베이스를 만들거나 이용하기가 비교적 쉽다. 무엇보다 확장이 용이하다는 장점이 있다. 처음 데이터베이스를 만든 후 관련되는 응용 프로그램들을 변경하지 않고도 새로운 데이터를 추가 할 수 있다.</summary></entry><entry><title type="html">Start blog</title><link href="http://localhost:4000/2020/11/04/Start-blog.html" rel="alternate" type="text/html" title="Start blog" /><published>2020-11-04T00:00:00+09:00</published><updated>2020-11-04T00:00:00+09:00</updated><id>http://localhost:4000/2020/11/04/Start%20blog</id><content type="html" xml:base="http://localhost:4000/2020/11/04/Start-blog.html">&lt;p&gt;#Start blog&lt;/p&gt;
+
+&lt;p&gt;Aelleek’s blog&lt;/p&gt;</content><author><name>Kyeongwon Lee</name><email>aelleek@gmail.com</email></author><summary type="html">#Start blog Aelleek’s blog</summary></entry></feed>

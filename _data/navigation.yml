@@ -6,34 +6,10 @@ header:
       en-US   : *EN
       en-CA   : *EN
       en-AU   : *EN
-      ko      : &KO       소개
+      ko      : &KO       Home
       ko-KR   : *KO
       # @end locale config
     url: /index.html
-
-  - titles:
-      # @start locale config
-      en      : &EN       Archive
-      en-GB   : *EN
-      en-US   : *EN
-      en-CA   : *EN
-      en-AU   : *EN
-      ko      : &KO       아카이브
-      ko-KR   : *KO
-      # @end locale config
-    url: /archive.html
-
-  - titles:
-      # @start locale config
-      en      : &EN       Exam
-      en-GB   : *EN
-      en-US   : *EN
-      en-CA   : *EN
-      en-AU   : *EN
-      ko      : &KO       연습
-      ko-KR   : *KO
-      # @end locale config
-    url: /exam/exam.html
 
   - titles:
       # @start locale config
@@ -42,7 +18,7 @@ header:
       en-US   : *EN
       en-CA   : *EN
       en-AU   : *EN
-      ko      : &KO       문서
+      ko      : &KO       Docs
       ko-KR   : *KO
       # @end locale config
     url: /docs/docs.html
@@ -54,21 +30,54 @@ header:
       en-US   : *EN
       en-CA   : *EN
       en-AU   : *EN
-      ko      : &KO       소개
+      ko      : &KO       About
       ko-KR   : *KO
       # @end locale config
     url: /about.html
 
+  - titles:
+      # @start locale config
+      en      : &EN       Github
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+      ko      : &KO       Github
+      ko-KR   : *KO
+      # @end locale config
+    url: https://github.com/lkw911024
 
-exam:
-  - title:      Start
+study:
+  - title:      Programming
     children:
-      - title:  Sidebar Test6
-        url:    /docs/Test-exam
+      - title:  Java
+        url:    /docs/Java/Java 
+      - title:  NodeJS
+        url:    /docs/NodeJS/NodeJS
 
-
-docs-ko:
-  - title:      Start
+java:
+  - title:      Java
     children:
-      - title:  Sidebar Test1
-        url:    /docs/ko/quick-start
+      - title:  개요
+        url:    /docs/Java/Java 
+
+
+nodejs:
+  - title:      NodeJS
+    children:
+      - title:  개요
+        url:    /docs/NodeJS/NodeJs
+
+
+
+
+database:
+  - title:      Database
+    children:
+      - title:  start
+        url:    /study/Database/Ch01
+      - title:  start2
+        url:    /study/Database/Ch02
+      - title:  start3
+        url:    /study/Database/Ch03
+
