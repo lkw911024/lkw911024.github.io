@@ -45,7 +45,7 @@ header:
       ko      : &KO       문서
       ko-KR   : *KO
       # @end locale config
-    url: /docs/exam.html
+    url: /docs/docs.html
 
   - titles:
       # @start locale config
