@@ -33,7 +33,7 @@ header:
       ko      : &KO       연습
       ko-KR   : *KO
       # @end locale config
-    url: /exam.html
+    url: /exam/exam.html
 
   - titles:
       # @start locale config
