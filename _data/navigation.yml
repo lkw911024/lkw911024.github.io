@@ -46,3 +46,10 @@ header:
       ko-KR   : *KO
       # @end locale config
     url: /about.html
+
+
+exam:
+  - title:      Start
+    children:
+      - title:  Sidebar Test
+        url:    /exam/post/Test exam
