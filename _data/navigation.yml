@@ -52,4 +52,4 @@ exam:
   - title:      Start
     children:
       - title:  Sidebar Test2
-        url:    /exam/_post/Test-exam
+        url:    /exam/post/Test-exam
