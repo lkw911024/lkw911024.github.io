@@ -51,5 +51,5 @@ header:
 exam:
   - title:      Start
     children:
-      - title:  Sidebar Test2
+      - title:  Sidebar Test3
         url:    /exam/post/Test-exam
